@@ -1,0 +1,9 @@
+body {
+    background-color: lightblue;
+    .test {
+        background-color: lighten(#000, 10%);
+    }
+    .aaa {
+        color: red;
+    }
+}
