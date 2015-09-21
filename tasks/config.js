@@ -17,7 +17,14 @@ module.exports = function () {
         uiCssName:  "jdMobi.css",   // 通用&组件 css 打包名称
         jsName:     "app.js",       // 业务 js 打包名称
         uiJsName:   "jdMobi.js",    // 通用&组件 js 打包名称
-        browser: ["google chrome"]  // 启动浏览器种类
+        browser: ["google chrome"], // 启动浏览器种类
+        testServer: {
+            // 测试服务器地址，用户名，密码
+            host:   'mo.jd.com',
+            user:    'willhu',
+            pass:    '198511',
+            path:   '/static/jdm/'
+        }
         //server: {
         //    host:       "localhost",
         //    port:        "3000"

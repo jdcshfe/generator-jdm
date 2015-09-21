@@ -74,7 +74,9 @@ require('./tasks/browsersync')(gulp, $, settings);
 require('./tasks/copy')(gulp, $, settings);
 // usemin
 require('./tasks/usemin')(gulp, $, settings);
-// TODO: add gulp-sftp
+// sftp
+// command:  gulp ftp
+require('./tasks/ftp')(gulp, $, settings);
 
 // tasks
 // imagemin&sprite
