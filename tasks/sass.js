@@ -8,7 +8,7 @@
 
 module.exports = function (gulp, $, settings) {
     var fs = require('fs');
-    gulp.task('sass-normal', function() {
+    gulp.task('sass-normal', function () {
         // normal
         return gulp.src([settings.srcPath + '/scss/*.scss', settings.srcPath + '/scss/*.css'])
             .pipe($.sourcemaps.init())    // sourcemaps init
@@ -24,11 +24,11 @@ module.exports = function (gulp, $, settings) {
             .pipe($.sourcemaps.write())   // output sourcemaps
             .pipe(gulp.dest(settings.srcPath + '/css/'));
     });
-        // component
-    gulp.task('sass-component', function() {
+    // component
+    gulp.task('sass-component', function () {
         var componentList = fs.readdirSync(settings.srcPath + '/component/');
         if (componentList.length > 0) {
-            componentList.forEach(function(componentFile) {
+            componentList.forEach(function (componentFile) {
                 return gulp.src(settings.srcPath + '/component/' + componentFile + '/*.scss')
                     .pipe($.sourcemaps.init())    // sourcemaps init
                     .pipe($.sass({
@@ -45,5 +45,5 @@ module.exports = function (gulp, $, settings) {
             });
         }
     });
-    gulp.task('sass', ['sass-normal', 'sass-component']);
+    gulp.task('sass', ['sass-normal']);
 };
