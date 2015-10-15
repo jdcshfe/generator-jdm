@@ -100,16 +100,16 @@ gulp.task('run', [
 ]);
 // build to dist
 gulp.task('build', [
-    'copy-img',
+    'imagemin',
     'usemin'
 ]);
 
 // preview dist floder
-gulp.task('serve', [
-    'browsersync:dist'
-]);
-
-// clean demo
-gulp.task('clean-demo', [
-    'browsersync:dist'
-]);
+//gulp.task('serve', [
+//    'browsersync:dist'
+//]);
+//
+//// clean demo
+//gulp.task('clean-demo', [
+//    'browsersync:dist'
+//]);
