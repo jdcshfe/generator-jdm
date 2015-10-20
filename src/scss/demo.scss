@@ -1,1 +1,12 @@
-@import "";
+@import "sprite/bus";
+
+body {
+    color: red;
+}
+
+$bus-group: ('search-white', $search-white, $search-white-2x);
+//
+.bus {
+    @include retina-sprite($bus-group);
+}
+

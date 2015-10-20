@@ -8,24 +8,28 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <meta name="format-detection" content="telephone=no">
     <!-- 这里 是合并基础类css-->
-    <!-- build:cssBase css/base.css -->
+    <!-- build:cssBase ../css/base.css -->
     <link rel="stylesheet" href="../css/demo.css"/>
     <!-- endbuild -->
     <!-- 这里是合并通用UI类css-->
-    <!-- build:cssUi css/ui.css -->
+    <!-- build:cssUi ../css/ui.css -->
     <link rel="stylesheet" href="../css/demoA.css"/>
     <link rel="stylesheet" href="../css/demoB.css"/>
     <!-- endbuild -->
     <!-- 这里是合并页面相关类css-->
-    <!-- build:cssPage css/page.css -->
+    <!-- build:cssPage ../css/page.css -->
     <link rel="stylesheet" href="../css/demoA.css"/>
     <link rel="stylesheet" href="../css/demoB.css"/>
     <!-- endbuild -->
 </head>
 <body>
 <h1>hello world</h1>
+<div>
+    <p>图标</p>
+    <span class="bus"></span>
+</div>
 <!-- lib js -->
-<!-- build:jsLib js/zepto.js -->
+<!-- build:jsLib ../js/zepto.js -->
 <script src="../component/zeptojs/src/zepto.js"></script>
 <script src="../component/zeptojs/src/event.js"></script>
 <script src="../component/zeptojs/src/ajax.js"></script>
@@ -47,12 +51,12 @@
 <!-- endbuild -->
 
 <!-- component js -->
-<!-- build:jsComponent js/component.js -->
+<!-- build:jsComponent ../js/component.js -->
 <script src="../component/demo/alert.js"></script>
 <!-- endbuild -->
 
 <!-- page js -->
-<!-- build:jsPage js/page.js -->
+<!-- build:jsPage ../js/page.js -->
 <script src="../js/demo/test.js"></script>
 <script src="../js/demo/testb.js"></script>
 <!-- endbuild -->
