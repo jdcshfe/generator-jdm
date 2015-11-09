@@ -11,6 +11,7 @@ module.exports = function () {
         srcPath:    'src',          // 开发目录
         distPath:   'dist',         // 发布目录
         pngLevel:   3,              // png 压缩等级
+        spriteLevel:    60,         // sprite 压缩等级
         imgRetina:  true,           // css sprite是否支持高清屏
         sassOutputType: 'compact',  // sass 输出 css 是否压缩
         browser: ['google chrome'], // 启动浏览器种类
